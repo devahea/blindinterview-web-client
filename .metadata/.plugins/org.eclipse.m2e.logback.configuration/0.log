@@ -1,0 +1,24 @@
+2016-07-21 20:33:34,892 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ahea:ahea:0.0.1-SNAPSHOT @ /Users/nohsunghyun/Documents/blindinterview/repo/blindinterview-web-client/web-client/pom.xml.
+2016-07-21 20:33:35,631 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-21 20:33:35,635 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-21 20:33:35,646 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-21 20:33:35,649 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-21 20:33:35,649 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nohsunghyun/Documents/blindinterview/repo/blindinterview-web-client/web-client/src/test/resources
+2016-07-21 20:33:35,918 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /web-client/src/main/java
+2016-07-21 20:33:35,918 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /web-client/src/main/resources
+2016-07-21 20:33:35,921 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /web-client/src/main/resources
+2016-07-21 20:33:35,928 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /web-client/src/test/java
+2016-07-21 20:33:36,141 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2016-07-21 20:33:36,143 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-07-21 20:33:36,232 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ahea:ahea:0.0.1-SNAPSHOT @ /Users/nohsunghyun/Documents/blindinterview/repo/blindinterview-web-client/web-client/pom.xml.
+2016-07-21 20:33:36,419 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /web-client/src/main/java
+2016-07-21 20:33:36,419 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /web-client/src/main/resources
+2016-07-21 20:33:36,421 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /web-client/src/main/resources
+2016-07-21 20:33:36,425 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /web-client/src/test/java
+2016-07-21 20:33:36,587 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ahea:ahea:0.0.1-SNAPSHOT @ /Users/nohsunghyun/Documents/blindinterview/repo/blindinterview-web-client/web-client/pom.xml.
+2016-07-21 20:33:36,657 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-07-21 20:33:37,195 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-21 20:33:37,195 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-21 20:33:37,195 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-21 20:33:37,197 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-21 20:33:37,197 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nohsunghyun/Documents/blindinterview/repo/blindinterview-web-client/web-client/src/test/resources
