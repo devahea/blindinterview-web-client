@@ -2,7 +2,7 @@
 <html lang="en-us">
         <head>
                 <meta charset="utf-8">
-                <title>Monarch - Admin Responsive + AngularJS - Live Preview - WrapBootstrap</title>
+                
                 <meta name="description" content="Live preview for Monarch - Admin Responsive + AngularJS at WrapBootstrap">
                 <meta name="viewport" content="width=1024">
                 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -27,8 +27,9 @@
                         <div id="tray" class="topbar" sty1le="width: auto;">
                                 <div class="fill">
                                         <div class="container">
-                                                <a class="brand" href="https://wrapbootstrap.com/"><img src="//d85wutc1n854v.cloudfront.net/live/imgs/logo.png"></a>
-                                                <h1 id="item_name"><a href="https://wrapbootstrap.com/theme/monarch-admin-responsive-angularjs-WB02R1485">Monarch - Admin Responsive + AngularJS</a></h1>
+                                        &nbsp;
+                                                <div data-text-content="true" style="font-weight: bold; font-size: 36px; color: rgb(255, 255, 255); font-family: &quot;Comic Sans MS&quot;;" spellcheck="false" class="">Blind Interview</div>
+                                                
                                                     <div class="remove"><a class="btn" href="https://agileui.com/demo/monarch/demo1.3.1/index.html" title="Remove this frame">Remove this frame &raquo;</a></div>
                                         </div>
                                 </div>
