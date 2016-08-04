@@ -20,7 +20,9 @@ var ahea = new function() {
 	this.ajax = function(ajaxFunction) {
 		alert('call ajaxFunction');
 
-		
+		$.ajaxPrefilter('json', function(options, orig, jqXHR) {
+	        return 'jsonp';
+	    });
 		
 		$.ajax({
 					url : "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "oauth/token",

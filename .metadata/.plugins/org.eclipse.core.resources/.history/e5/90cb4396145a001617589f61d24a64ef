@@ -20,26 +20,11 @@ var ahea = new function() {
 	this.ajax = function(ajaxFunction) {
 		alert('call ajaxFunction');
 
+//		$.ajaxPrefilter('json', function(options, orig, jqXHR) {
+//	        return 'jsonp';
+//	    });
 		
 		
-		$.ajax({
-					url : "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "oauth/token",
-					data : {
-						grant_type : "password",
-						client_id : CLIENT_ID,
-						client_secret : CLIENT_SECRIT,
-						scope : "read",
-						username : SERVER_ID,
-						password : SERVER_PASSWORD
-					},
-					crossDomain: true,
-					dataType: "json",
-			        cache: false,
-					method : 'POST',
-					success : function(data) {
-						alert("Data Loaded: " + data);
-					}
-				});
 		
 		var params = {
 						grant_type : "password",
