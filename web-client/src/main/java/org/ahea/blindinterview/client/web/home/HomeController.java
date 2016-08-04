@@ -1,4 +1,7 @@
+
 package org.ahea.blindinterview.client.web.home;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +30,7 @@ public class HomeController {
 	@RequestMapping("/template")
 	public void template() {
 		//템플릿 페이지입니다
+		
 	}
 
 }

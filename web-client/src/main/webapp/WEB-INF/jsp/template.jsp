@@ -311,5 +311,22 @@
 		<script src="/assets/js/src/ace.settings-skin.js"></script>
 		<script src="/assets/js/src/ace.widget-on-reload.js"></script>
 		<script src="/assets/js/src/ace.searchbox-autocomplete.js"></script>
+		<script src="/js/ahea.js"></script>
+		
+		
+		<script type="text/javascript">
+			ahea.ajax( 
+						function(){
+							alert('');
+						}
+					);
+		</script>
+		
 	</body>
 </html>
+<%
+
+response.addHeader( "Access-Control-Allow-Origin", "*" ); 
+response.addHeader( "Access-Control-Allow-Methods", "POST" ); 
+response.addHeader( "Access-Control-Max-Age", "1000" );
+%>
