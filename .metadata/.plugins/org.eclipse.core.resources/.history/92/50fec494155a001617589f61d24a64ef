@@ -63,7 +63,7 @@ var ahea = new function() {
 			}, 
 			cache: false, 
 			contentType: "application/text; charset=utf-8", 
-			url: "http://" + AUTH_SERVER_URL + "", 
+			url: "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "", 
 //			data:params,
 			error: function( xhr,err ) {
 				console.log( 'Sample of error data:', err );

@@ -36,21 +36,19 @@ var ahea = new function() {
 					dataType: "json",
 			        cache: false,
 					method : 'POST',
-					async: false,
 					success : function(data) {
-						
-						localStorage.setItem("access_token", data.access_token)
+						alert("Data Loaded: " + data);
 					}
 				});
 		
-//		var params = {
-//						grant_type : "password",
-//						client_id : CLIENT_ID,
-//						client_secret : CLIENT_SECRIT,
-//						scope : "read",
-//						username : SERVER_ID,
-//						password : SERVER_PASSWORD
-//					};
+		var params = {
+						grant_type : "password",
+						client_id : CLIENT_ID,
+						client_secret : CLIENT_SECRIT,
+						scope : "read",
+						username : SERVER_ID,
+						password : SERVER_PASSWORD
+					};
 		
 		
 		
@@ -59,12 +57,15 @@ var ahea = new function() {
 				'Access-Control-Allow-Origin': '*' , 
 				'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS', 
 				'Access-Control-Allow-Headers': 'Content-Type, Content-Range, Content-Disposition, Content-Description',
-				'Authorization': 'Bearer ' + localStorage.getItem("access_token")
+				'Authorization': 'Bearer cbbb1a6e-8614-4a4d-a967-b0a42924e7ca'
 			}, 
+			crossDomain: true,  
 			cache: false, 
 			contentType: "application/text; charset=utf-8", 
-			url: "http://" + AUTH_SERVER_URL + "", 
-//			data:params,
+			timeout: 5000,
+			processdata: true, 
+			url: "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "", 
+			data:params,
 			error: function( xhr,err ) {
 				console.log( 'Sample of error data:', err );
 				console.log("readyState: "+xhr.readyState+"\nstatus: "+xhr.status+"\nresponseText: "+xhr.responseText);

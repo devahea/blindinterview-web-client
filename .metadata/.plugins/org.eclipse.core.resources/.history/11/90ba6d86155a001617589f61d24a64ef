@@ -43,14 +43,14 @@ var ahea = new function() {
 					}
 				});
 		
-//		var params = {
-//						grant_type : "password",
-//						client_id : CLIENT_ID,
-//						client_secret : CLIENT_SECRIT,
-//						scope : "read",
-//						username : SERVER_ID,
-//						password : SERVER_PASSWORD
-//					};
+		var params = {
+						grant_type : "password",
+						client_id : CLIENT_ID,
+						client_secret : CLIENT_SECRIT,
+						scope : "read",
+						username : SERVER_ID,
+						password : SERVER_PASSWORD
+					};
 		
 		
 		
@@ -61,10 +61,13 @@ var ahea = new function() {
 				'Access-Control-Allow-Headers': 'Content-Type, Content-Range, Content-Disposition, Content-Description',
 				'Authorization': 'Bearer ' + localStorage.getItem("access_token")
 			}, 
+			crossDomain: true,  
 			cache: false, 
 			contentType: "application/text; charset=utf-8", 
-			url: "http://" + AUTH_SERVER_URL + "", 
-//			data:params,
+			timeout: 5000,
+			processdata: true, 
+			url: "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "", 
+			data:params,
 			error: function( xhr,err ) {
 				console.log( 'Sample of error data:', err );
 				console.log("readyState: "+xhr.readyState+"\nstatus: "+xhr.status+"\nresponseText: "+xhr.responseText);
