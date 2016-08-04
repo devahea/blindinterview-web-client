@@ -17,7 +17,7 @@ function makeBaseAuth(user, pswd) {
 }
 
 var ahea = new function() {
-	this.ajax = function(ajaxParam) {
+	this.ajax = function(ajaxFunction) {
 		alert('call ajaxFunction');
 
 		
@@ -43,7 +43,7 @@ var ahea = new function() {
 					}
 				});
 		
-		var ajaxParams = { type: 'POST', 
+		var ajaxParam = { type: 'POST', 
 				headers: { 
 					'Access-Control-Allow-Origin': '*' , 
 					'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS', 
@@ -55,10 +55,7 @@ var ahea = new function() {
 				
 			};
 		
-		$.extend(ajaxParam,ajaxParam);
-		
-		$.ajax(ajaxParam)
-		.done(function() { /*doing anything*/})
+		$.ajax(ajaxParam).done(function() {  })
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
 		

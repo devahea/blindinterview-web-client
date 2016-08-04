@@ -17,7 +17,7 @@ function makeBaseAuth(user, pswd) {
 }
 
 var ahea = new function() {
-	this.ajax = function(ajaxParam) {
+	this.ajax = function(ajaxFunction) {
 		alert('call ajaxFunction');
 
 		
@@ -43,22 +43,18 @@ var ahea = new function() {
 					}
 				});
 		
-		var ajaxParams = { type: 'POST', 
-				headers: { 
-					'Access-Control-Allow-Origin': '*' , 
-					'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS', 
-					'Access-Control-Allow-Headers': 'Content-Type, Content-Range, Content-Disposition, Content-Description',
-					'Authorization': 'Bearer ' + localStorage.getItem("access_token")
-				}, 
-				cache: false, 
-				contentType: "application/text; charset=utf-8", 
-				
-			};
 		
-		$.extend(ajaxParam,ajaxParam);
-		
-		$.ajax(ajaxParam)
-		.done(function() { /*doing anything*/})
+		$.ajax({ type: 'POST', 
+			headers: { 
+				'Access-Control-Allow-Origin': '*' , 
+				'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS', 
+				'Access-Control-Allow-Headers': 'Content-Type, Content-Range, Content-Disposition, Content-Description',
+				'Authorization': 'Bearer ' + localStorage.getItem("access_token")
+			}, 
+			cache: false, 
+			contentType: "application/text; charset=utf-8", 
+			
+		}.push(ajaxFunction)).done(function() {  })
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
 		

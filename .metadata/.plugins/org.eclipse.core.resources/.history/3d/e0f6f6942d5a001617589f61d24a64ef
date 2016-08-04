@@ -55,7 +55,7 @@ var ahea = new function() {
 				
 			};
 		
-		$.extend(ajaxParam,ajaxParam);
+		$.extend(ajaxParam,ajaxParam)
 		
 		$.ajax(ajaxParam)
 		.done(function() { /*doing anything*/})
