@@ -1,0 +1,5 @@
+package org.ahea.blindinterview.client.web;
+
+public class WebConfig {
+
+}

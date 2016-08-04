@@ -1,0 +1,5 @@
+package org.ahea.blindinterview.client.web.user;
+
+public class HomeController {
+
+}

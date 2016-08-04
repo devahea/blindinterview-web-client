@@ -3,9 +3,11 @@ package org.ahea.blindinterview.client.web.home;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+@Controller("NonLoginUserHomeController")
 public class HomeController {
 
+	//todo 
+	//hello 메소드 삭제해주세요
 	@RequestMapping("/hello")
 	public String hello() {
 		return "hello"; 
@@ -22,5 +24,9 @@ public class HomeController {
 		return "hello3"; 
 	}
 
+	@RequestMapping("/template")
+	public void template() {
+		//템플릿 페이지입니다
+	}
 
 }
