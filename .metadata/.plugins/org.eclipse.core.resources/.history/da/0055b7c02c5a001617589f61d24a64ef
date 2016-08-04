@@ -53,8 +53,8 @@ var ahea = new function() {
 			}, 
 			cache: false, 
 			contentType: "application/text; charset=utf-8", 
-			
-		}.push(ajaxFunction)).done(function() {  })
+			ajaxFunction
+		}).done(function() {  })
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
 		
