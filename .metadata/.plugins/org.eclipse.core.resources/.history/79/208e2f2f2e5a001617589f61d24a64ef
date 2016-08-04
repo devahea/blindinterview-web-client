@@ -324,7 +324,7 @@
 							+ xhr.status + "\nresponseText: "
 							+ xhr.responseText);
 				},
-				method:"POST",
+				method:"POST"
 				success : function(data, status) {
 					if (console && console.log) {
 						console.log(data);

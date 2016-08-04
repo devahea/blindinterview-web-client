@@ -55,9 +55,9 @@ var ahea = new function() {
 				
 			};
 		
-		$.extend(ajaxParams,ajaxParam);
+		$.extend(ajaxParam,ajaxParam);
 		
-		$.ajax(ajaxParams)
+		$.ajax(ajaxParam)
 		.done(function() { /*doing anything*/})
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
