@@ -315,11 +315,21 @@
 		
 		
 		<script type="text/javascript">
-			ahea.ajax( 
-						function(){
-							alert('');
-						}
-					);
+			
+			ahea.ajax({
+				url : "http://175.126.112.139:8080/api/",
+				error : function(xhr, err) {
+					console.log('Sample of error data:', err);
+					console.log("readyState: " + xhr.readyState + "\nstatus: "
+							+ xhr.status + "\nresponseText: "
+							+ xhr.responseText);
+				},
+				success : function(data, status) {
+					if (console && console.log) {
+						console.log(data);
+					}
+				}
+			});
 		</script>
 		
 	</body>

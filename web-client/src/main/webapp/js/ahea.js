@@ -43,16 +43,6 @@ var ahea = new function() {
 					}
 				});
 		
-//		var params = {
-//						grant_type : "password",
-//						client_id : CLIENT_ID,
-//						client_secret : CLIENT_SECRIT,
-//						scope : "read",
-//						username : SERVER_ID,
-//						password : SERVER_PASSWORD
-//					};
-		
-		
 		
 		$.ajax({ type: 'POST', 
 			headers: { 
@@ -63,17 +53,7 @@ var ahea = new function() {
 			}, 
 			cache: false, 
 			contentType: "application/text; charset=utf-8", 
-			url: "http://" + AUTH_SERVER_URL + "", 
-//			data:params,
-			error: function( xhr,err ) {
-				console.log( 'Sample of error data:', err );
-				console.log("readyState: "+xhr.readyState+"\nstatus: "+xhr.status+"\nresponseText: "+xhr.responseText);
-			},
-			success: function( data, status ) {
-				if (console && console.log) {
-					console.log( data );
-				}
-			}
+			ajaxFunction
 		}).done(function() {  })
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
@@ -84,7 +64,7 @@ var ahea = new function() {
 		// -d grant_type=password -d client_id=ahea_client_id -d scope=read
 		// -d username=ahea -d password=ahea123
 
-		ajaxFunction();
+		
 
 	};
 
