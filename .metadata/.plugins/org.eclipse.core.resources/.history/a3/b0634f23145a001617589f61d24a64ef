@@ -24,24 +24,24 @@ var ahea = new function() {
 	        return 'jsonp';
 	    });
 		
-		$.ajax({
-					url : "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "oauth/token",
-					data : {
-						grant_type : "password",
-						client_id : CLIENT_ID,
-						client_secret : CLIENT_SECRIT,
-						scope : "read",
-						username : SERVER_ID,
-						password : SERVER_PASSWORD
-					},
-					crossDomain: true,
-					dataType: "json",
-			        cache: false,
-					method : 'POST',
-					success : function(data) {
-						alert("Data Loaded: " + data);
-					}
-				});
+//		$.ajax({
+//					url : "http://" + CLIENT_ID + ":" + CLIENT_SECRIT + "@" + AUTH_SERVER_URL + "oauth/token",
+//					data : {
+//						grant_type : "password",
+//						client_id : CLIENT_ID,
+//						client_secret : CLIENT_SECRIT,
+//						scope : "read",
+//						username : SERVER_ID,
+//						password : SERVER_PASSWORD
+//					},
+//					crossDomain: true,
+//					dataType: "json",
+//			        cache: false,
+//					method : 'POST',
+//					success : function(data) {
+//						alert("Data Loaded: " + data);
+//					}
+//				});
 		
 		var params = {
 						grant_type : "password",
@@ -77,7 +77,7 @@ var ahea = new function() {
 					console.log( data );
 				}
 			}
-		}).done(function() {  })
+		}).done(function() { alert("success"); })
 		.fail(function(jqXHR) { alert(JSON.stringify(jqXHR)); }) 
 		.then(function( data, textStatus, jqXHR ) {alert(data);});
 		
