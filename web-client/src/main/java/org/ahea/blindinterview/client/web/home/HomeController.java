@@ -38,6 +38,13 @@ public class HomeController {
 		//템플릿 페이지입니다
 		
 	}
+	
+	@RequestMapping("/hello5")
+	public void hello5() {
+		//템플릿 페이지입니다
+		
+	}
+
 
 
 }
