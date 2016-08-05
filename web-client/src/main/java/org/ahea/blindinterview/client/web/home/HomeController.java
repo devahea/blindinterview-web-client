@@ -32,5 +32,12 @@ public class HomeController {
 		//템플릿 페이지입니다
 		
 	}
+	
+	@RequestMapping("/hello4")
+	public void hello4() {
+		//템플릿 페이지입니다
+		
+	}
+
 
 }
