@@ -93,7 +93,7 @@ monarchApp.config(function($routeProvider) {
     })
 
         .when ('/forms-elements', {
-        templateUrl : 'pages/forms-elements.hbs',
+        templateUrl : 'pages/forms-elements.html',
         controller  : 'forms-elementsController'
     })
 
